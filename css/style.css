@@ -1,0 +1,264 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	text-align: center;
+
+	font-family:"Apercu Regular", Calibri, sans-serif; font-weight:normal; font-style:normal;
+	letter-spacing: 1px;
+	color: black;
+	text-transform: uppercase;
+}
+
+h1, h2 { font-family:"Apercu Regular", Calibri, sans-serif; font-weight:normal; font-style:normal;
+color: #ee7582; font-size: 20px;}
+
+strong {
+	font-family:"Apercu Regular", Calibri, sans-serif; font-weight:normal; font-style:normal;
+	letter-spacing: 1px;
+	line-height:1;
+}
+
+a {
+	font-family:"Apercu Regular", Calibri, sans-serif; font-weight:normal; font-style:normal;
+	text-decoration: none;
+	color: #ed6797;
+}
+
+a:hover {
+	text-decoration: underline;
+	/*border-bottom: 2px solid;*/
+}
+
+p { 
+	font-family:"Century Schoolbook Regular", 'Century Schoolbook', serif; 
+	font-weight:normal; 
+	font-style:normal; 
+	color: #ee7582;
+	font-size: 18px; 
+	line-height: 1.5;
+	margin: 18px 0;
+	/*position:absolute;*/
+	/*top: 50px;*/
+}
+
+#platform h1 {
+	position: relative;
+	/*left: -112px;*/
+}
+
+#platform .center-box{
+	z-index: 1;
+}
+
+#conference {
+	opacity: 0;
+	height: 150%;
+}
+
+#conference h1 {
+	position:relative;
+	left: 157px;
+}
+
+#conference p {
+	color: #a26dac;
+}
+
+.page{
+	min-height: 100%;
+	width: 100%;
+	background-color: transparent;
+	float: left;
+	position: relative;
+}
+
+#partners {
+	background-color: #ccc;
+	z-index: 2;
+	color: white;
+}
+
+#partners .center-box{
+	position: absolute;
+	opacity: 1;
+	margin-top: -242px;
+	height: 484px;
+}
+
+#partners h1{
+	margin-bottom: 30px;
+}
+
+#past-speakers {
+	background-color: rgba(255, 255, 255, .8);
+	z-index: 2;
+}
+
+#past-speakers h1{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#past-speakers h2{
+	font-size: 14px;
+	margin-top: 8px;
+	margin-bottom: 1px;
+	line-height: 1;
+}
+
+#past-speakers ul {
+	list-style-type: none;
+	max-width: 940px;
+	margin: auto;
+}
+
+#past-speakers li {
+	text-align: left;
+	display: block;
+	float: left;
+	width: 300px;
+	height: 120px;
+	table-layout: fixed;
+	/*float: left;*/
+}
+
+#past-speakers img {
+	float: left;
+	margin-right: 10px;
+}
+
+#past-speakers a {
+	font-size: 12px;
+}
+
+#past-speakers p {
+	font-family:"Century Schoolbook Regular", 'Century Schoolbook', serif; 
+	/*font-family:"Apercu Regular", Calibri, sans-serif; font-weight:normal; font-style:normal;*/
+	font-size: 14px;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: black;
+	text-transform: none;
+}
+
+#partners .friends{
+	float: left;
+}
+
+#partners .sponsors{
+	float: right;
+}
+
+.background {
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+div .center-box {
+	height: 280px;
+	width: 700px;
+	margin-top: -140px;
+	margin-left: -350px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	opacity: 0.7;
+}
+
+.social {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 400px;
+	text-align: right;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+.soon {
+	position: fixed;
+	left: 20px;
+	top: 70px;
+	width: 200px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+.date {
+	position: fixed;	
+	top: 70px;
+	right: 20px;
+	font-size: 16px;
+}
+
+.imprint {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 12px;
+}
+
+.studio-visits{
+	position: fixed;
+	top: 100px;
+	left: 69px;
+	z-index: 2;
+}
+
+/* NAVIGATION */
+.navbar-default{
+	background-color: white;
+	border: 0;
+}
+
+.nav li a {
+  font-family:"Century Schoolbook Regular", 'Century Schoolbook', serif; 
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: black;
+  padding-right: 25px;
+  margin-top: 3px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: transparent;
+}
+
+nav li.active a {
+  color: #2c3dcf;
+}
+
+nav a strong {
+  font-family:"Apercu Regular", Calibri, sans-serif; font-weight:900; font-style:normal;  
+  font-size: 14px;
+  letter-spacing: 0;
+
+}
+
+.dropdown-menu {
+  width: 100%;
+  text-align: center;
+}
