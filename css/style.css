@@ -6,7 +6,7 @@ body {
 
   font-family: "Apercu Bold", Apercu, Calibri, sans-serif; font-weight:regular; font-style:normal;
   font-size: 13px;
-  height: 100%;
+  min-height: 100%;
 
   background-image: url("../img/retune.png");
   background-position: center center;
@@ -48,6 +48,10 @@ h1 strong {
 h2 {
   font-size: 14px;
   text-decoration: underline;
+}
+
+h3 {
+  font-size: 13px;
 }
 
 ul{
