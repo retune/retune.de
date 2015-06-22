@@ -1,19 +1,13 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>retune - creative technology platform berlin</title>        
-
-		 <!-- Bootstrap core CSS -->
+	<head>
+		<title>retune - creative technology berlin</title>        
+		<meta charset="UTF-8" />
 	    <link href="css/bootstrap.css" rel="stylesheet">
-
 	    <link href="css/style.css" rel="stylesheet">
+	    <link rel="icon" href="http://retune.de/img/favicon.png" type="image/png">
 
-		<link rel="icon" href="http://retune.de/img/favicon.png" type="image/png">
-
-        <meta charset="UTF-8" />
-
-		<meta name="description" content="retune is a berlin based platform for artists, designers, technologists and researchers who explore and shape new ways of creating and expressing with technology."/>
-
+	    <meta name="description" content="retune is a berlin based platform for artists, designers, technologists and researchers who explore and shape new ways of creating and expressing with technology."/>
+		
 		<meta property='og:locale' content='en_US'/>
 		<meta property='og:type' content='website'/>
 		<meta property='og:title' content='retune.'/>
@@ -21,235 +15,39 @@
 		<meta property='og:url' content='http://retune.de'/>
 		<meta property='og:site_name' content='retune.'/>
 		<meta property='fb:admins' content='1443104249'/>
-		<meta property='og:image' content='http://retune.de/img/retune_og.jpg'/>
-
-        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    	<script src="js/bootstrap.js"></script>
-        
-        <script type="text/javascript">
-	        $(document).ready(function() {
-
-	        	$(window).scroll(function(){
-		   			// Get container scroll position
-		   			var fromTop = $(this).scrollTop();
-
-		   			if(fromTop/$(window).height() <= 1){
-						$("#platform p").css('opacity', 1-(fromTop/$(window).height()));
-						$(".background").css('opacity', 1-(fromTop/$(window).height()));
-			   			$("#conference").css('opacity', (fromTop/$(window).height()));	
-			   			$("#platform h1").css('left', (fromTop/$(window).height())*-112);
-		   			}
-		   			else{
-		   				$("#platform p").css('opacity', 0);
-						$(".background").css('opacity', 0);
-			   			$("#conference").css('opacity', 1);	
-			   			$("#platform h1").css('left', -112);
-			   			// if(fromTop/$(window).height() <= 1.2){$("#conference").css('position', 'absolute'); $("#conference").css('top', '$(window).height()'); };
-			   		}
-
-			   		if(fromTop >= $('#past-speakers').offset().top){
-			   			// $('#past-speakers').css('opacity', 1);
-			   		}
-			   		else{
-			   			// $('#past-speakers').css('opacity', 0);	
-			   		}
-	   			});
-
-				// smooth scrolling for internal links from here: http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
-				$('a[href^="#"]').on('click',function (e) {
-				    e.preventDefault();
-				    var target = this.hash,
-				    $target = $(target);
-				    $('html, body').stop().animate({
-				        'scrollTop': $target.offset().top
-				    }, 900, 'swing', function () {
-				        window.location.hash = target;
-				    });
-				});
-
-	        });
-        </script>
-
-        <script type="text/javascript">
-		WebFontConfig = { fontdeck: { id: '41866' } };
-		(function() {
-			var wf = document.createElement('script');
-			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-			wf.type = 'text/javascript';
-			wf.async = 'true';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(wf, s);
-		})();
-	</script>
-    </head>
-
-	<body>		
-
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                <!-- <a class="navbar-brand" href="index.html">Modern Business</a> -->
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav nav-justified">
-                    <li class="active"><a href="http://retune.de/"><strong>retune</strong> conference</a>
-                    </li>
-                    <li><a href="http://retune.de/studio-visits/01-applied-future-studio/"><strong>retune</strong> studio visits</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">archive <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="http://retune.de/2013/" target="_blank">retune.13</a>
-                            </li>
-                            <li><a href="http://retune.de/2012/" target="_blank">retune.12</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-		
-		<div id="platform" class="page"> 
-
-			<div class="background"></div>
-			<!-- <div class="studio-visits"><a href="http://retune.de/studio-visits/01-applied-future-studio/" target="_blank"><img src="studio_visits_1.png"></a></div> -->
-			<div class="center-box">
-				<h1><a href="#conference"><img src="img/retune.png" class="img-responsive" style="margin:auto;"/></a></h1>	
-				<p class="description"><strong>retune. – </strong>is a berlin based platform for artists, designers, technologists and researchers who explore and shape new ways of creating and expressing with technology.</p>					
-			</div>
-
-			
-		</div> <!-- /platform -->
-
-		<div id="conference" class="page"> 
-			<div class="center-box">
-				<h1><a href="#"><img src="img/2014.png" class="year2014" alt="retune.2014"></a></h1>
-				<p class="description_conference"><strong>retune conference – </strong>is the main annual event organized by the retune platform. the conference features a fine selection of speakers and workshops. this year's retune conference will take place:<br/><br/><strong>26. – 28.09.2014</strong><br/><br/>
-					previous events:<br/>
-					<a href="http://retune.de/2013" target="_blank">retune.13</a><br/>
-					<a href="http://retune.de/2012" target="_blank">retune.12</a><br/>
+		<meta property='og:image' content='http://retune.de'/>
+	</head>
+	
+	<body>
+		<div id="content">
+			<h1><strong>retune.</strong></h1>
+			<div id="events">
+				<p>retune is a network and event series focussed on the intersection of art, design and new technologies.
+				<br/>This is a temprary website. For now please visit the last event's websites for more information.</p>
+				<h2>upcoming events</h2>
+				<ul>
+					<li><em>tba</em> studio visit #07 - Letters are my Friends</li>
+				</ul>
+				<p>
 				</p>
-			</div>
 
-
-			<div class="newsletter-signup">
-				sign up for our newsletter<br/>
-				<form action="http://retune.us5.list-manage.com/subscribe/post?u=344c97a9c4c79593a4204e159&amp;id=6874b09e6d" method="post" value="newsletter signup" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<div style="position: absolute; left: -5000px;"><input type="text" name="b_344c97a9c4c79593a4204e159_6874b09e6d" tabindex="-1" value=""></div>
-				<input type="email" name="EMAIL" class="required email" id="mce-EMAIL"><input type="checkbox" id="group_16" name="group[10925][16]" value="1" style="display:none;"><input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
-				</form>
-			</div><!-- /newsletter signup -->
-
-			<div class="date">
-				Berlin, <strong>26. – 28.09.2014</strong>
-			</div>		
-
-			<div class="social">
-				follow us on <br/><a href="https://twitter.com/retune_conf" target="_blank">twitter</a> and <a href="https://www.facebook.com/retuneconference" target="_blank">facebook</a><br/>
-				&#105;&#x6e;&#102;&#x6f; /AT/ &#114;&#101;&#116;&#117;&#110;&#101;&#46;&#100;&#x65;
-			</div>
-
-			<div class="soon">
-				speakers, workshops, and program will be announced soon.
-			</div>
-			
-			<div class="imprint">
-				<strong style="text-decoration:underline;">imprint</strong><br/>
-				julian adenauer<br/>
-				glogauer str. 21, 10999 berlin<br/>
-				DE283680426<br/>
-				&#x6a;&#x75;&#108;&#105;&#97;&#110; /at/ &#x72;&#101;&#116;&#117;&#110;&#101;&#46;&#100;&#101;
-			</div>
-
-		</div> <!-- /conference page -->
-
-		<div id="past-speakers" class="page">
-			<h1>past speakers</h1>
-			<ul>
-				<li><img src="img/jussi.png" /><h2>Jussi Ängeslevä</h2><p>UdK Berlin, ART+COM</p><p><a href="http://angesleva.iki.fi" target="_blank">angesleva.iki.fi</a></p></li>
-				<li><img src="img/memoakten.png" /><h2>Memo Akten</h2><p>media artist</p><p><a href="memo.tv" target="_blank">memo.tv</a></p></li>
-				<li><img src="img/auger.png" /><h2>James Auger</h2><p>RCA London</p><p><a href="http://www.auger-loizeau.com" target="_blank">auger-loizeau.com</a></p></li>
-				<li><img src="img/jeremybailey.png" /><h2>Jeremy Bailey</h2><p>Famous New Media Artist</p><p><a href="http://jeremybailey.net/" target="_blank">jeremybailey.net</a></p></li>
-				<li><img src="img/jamescarrigan.png" /><h2>James Carrigan</h2><p>Co-founder of Fixperts, Creative Director at sugru</p><p><a href="http://fixperts.org" target="_blank">fixperts.org</a></p></li>
-				<li><img src="img/leighchristie.png" /><h2>Leigh Christie</h2><p>eatART Laboratory, MIT</p><p><a href="http://leighchristie.com/" target="_blank">leighchristie.com</a></p></li>
-				<li><img src="img/timclem.png" /><h2>Timothy Clem</h2><p>github</p><p><a href="http://timothyclem.com/" target="_blank">timothyclem.com</a></p></li>
-				<li><img src="img/alpercugun.png" /><h2>Alper Çuğun</h2><p>Hubbub</p><p><a href="http://alper.nl/" target="_blank">alper.nl</a></p></li>
-				<li><img src="img/scottdelahunta.png" /><h2>Scott deLahunta</h2><p>Forsyte Company Motion Bank</p><p><a href="http://www.sdela.dds.nl/" target="_blank">sdela.dds.nl</a></p></li>
-				<li><img src="img/josegomezmarquez.png" /><h2>Jose Gomez-Marquez</h2><p>MIT Little Devices Group</p><p><a href="http://littledevices.org/" target="_blank">littledevices.org</a></p></li>
-				<li><img src="img/louisaheinrich.png" /><h2>Louisa Heinrich</h2><p>Superhuman</p><p><a href="http://www.louisaheinrich.com/" target="_blank">louisaheinrich.com</a></p></li>
-				<li><img src="img/simonhoeher.png" /><h2>Simon Höher</h2><p>Co-founder of Knowable</p><p><a href="http://knowable.org" target="_blank">knowable.org</a></p></li>
-				<li><img src="img/franziskahuebler.png" /><h2>Franziska Hübler</h2><p>HAW Hamburg</p><p><a href="http://www.huebler.cc/" target="_blank">huebler.cc</a></p></li>
-				<li><img src="img/peterkirn.png" /><h2>Peter Kirn</h2><p>CreateDigitalMusic.com</p><p><a href="http://pkirn.com/" target="_blank">pkirn.com</a></p></li>
-				<li><img src="img/olofmathe.png" /><h2>Olof Mathé</h2><p>Art Hack Day</p><p><a href="http://olofmathe.com" target="_blank">olofmathe.com</a></p></li>
-				<li><img src="img/kylemcdonald.png" /><h2>Kyle McDonald</h2><p>Media Artist</p><p><a href="http://kylemcdonald.net/" target="_blank">kylemcdonald.net</a></p></li>
-				<li><img src="img/maikenastoll.png" /><h2>Maike Nastoll</h2><p>Startnext</p><p><a href="http://www.startnext.de" target="_blank">startnext.de</a></p></li>
-				<li><img src="img/janenihhulchaointigh.png" /><h2>Jane ni Dhulchaointigh</h2><p>Founder of Sugru</p><p><a href="http://sugru.com/" target="_blank">sugru.com</a></p></li>
-				<li><img src="img/noraomurchu.png" /><h2>Nora O Murchú</h2><p>curator, researcher, designer</p><p><a href="http://www.noraomurchu.com" target="_blank">noraomurchu.com</a></p></li>
-				<li><img src="img/julianoliver.png" /><h2>Julian Oliver</h2><p>artist, critical engineer</p><p><a href="http://julianoliver.com/" target="_blank">julianoliver.com</a></p></li>
-				<li><img src="img/saschapohflepp.png" /><h2>Sascha Pohflepp</h2><p>artist, designer and writer</p><p><a href="http://pohflepp.com" target="_blank">pohflepp.com</a></p></li>
-				<li><img src="img/susapop.png" /><h2>Susa Pop</h2><p>Director Public Art Lab</p><p><a href="http://publicartlab-berlin.de/" target="_blank">publicartlab-berlin.de</a></p></li>
-				<li><img src="img/alannshapiro.png" /><h2>Alan N. Shapiro</h2><p>Technologist and Futurist</p><p><a href="http://www.alan-shapiro.com" target="_blank">alan-shapiro.com</a></p></li>
-				<li><img src="img/axelstab.png" /><h2>Axel Stab</h2><p>Mocontronic</p><p><a href="http://www.mocontronic.de" target="_blank">mocontronic.de</a></p></li>
-				<li><img src="img/markturrell.png" /><h2>Mark Turrell</h2><p>strategist, entrepreneur, speaker and author</p><p><a href="http://markturrell.wordpress.com" target="_blank">markturrell.wordpress.com</a></p></li>
-				<li><img src="img/nilsvoelker.png" /><h2>Nils Völker</h2><p>media artist</p><p><a href="http://nilsvoelker.com" target="_blank">nilsvoelker.com</a></p></li>
-				<li><img src="img/moritzwaldemeyer.png" /><h2>Moritz Waldemeyer</h2><p>designer</p><p><a href="http://www.waldemeyer.com" target="_blank">waldemeyer.com</a></p></li>
-				<li><img src="img/friederweiss.png" /><h2>Frieder Weiss</h2><p>engineer in the arts</p><p><a href="http://frieder-weiss.de" target="_blank">frieder-weiss.de</a></p></li>
-				<li><img src="img/wolfgangwopperer.png" /><h2>Wolfgang Wopperer</h2><p>trained philosopher and untrained entrepreneur</p><p><a href="http://todayimade.co" target="_blank">todayimade.co</a></p></li>
-				<li><img src="img/christianzoellner.png" /><h2>Christian Zöllner</h2><p>The Constitute</p><p><a href="http://theconstitute.org" target="_blank">theconstitute.org</a></p></li>
-			</ul>
-		</div>
-
-		<div id="partners" class="page">
-			<div class="center-box">
-				<div class="center-box">
-					<div class="friends">
-						<h1>friends and supporters</h1>
-						<a href ="http://sonicedevelopment.com" target="_blank"><img src="img/sonice.png" width="220px" style="margin-bottom: 10px"/></a><br/>
-						<a href ="http://studio-regular.com" target="_blank"><img src="img/StudioRegular.png" width="220px" style="margin-bottom: 15px"/></a><br/>
-						<a href ="http://theconstitute.org" target="_blank"><img src="img/the_constitute.png" style="margin-bottom: 30px"/></a><br/>
-						<a href ="http://tinkersoup.de" target="_blank"><img src="img/tinkersoup.png"/></a><br/>
-					</div>
-			
-					<div class="sponsors">
-						<h1>sponsors</h1>
-						<a href ="http://mailchimp.com" target="_blank"><img src="img/mailchimp.png" width="300px" style="margin-bottom: 10px"/></a>
-					</div>
-				</div>
-			</div>
-			
-		</div>  <!-- /partners -->
-
-
-
+				<h2>past events</h2>
+				<ul>
+					<li><em>18.06.2015</em> studio visit #06 - Studio NAND (<a href="" target="_blank">photos</a>)</li>
+					<li><em>08.05.2015</em> studio visit #05 - THINGSCON Edition</li>
+					<li><em>15.01.2015</em> studio visit #04 - Feld (<a href="" target="_blank">photos</a>)</li>
+					<li><em>23.10.2014</em> studio visit #03 - onformative (<a href="" target="_blank">photos</a>)</li>
+					<li><em>26.–28.09.2014</em> retune. conference 2014 (<a href="" target="_blank">website</a>, <a href="" target="_blank">photos</a>)</li>
+					<li><em>15.07.2014</em> studio visit #02 - Weltall (<a href="" target="_blank">photos</a>)</li>
+					<li><em>04.03.2014</em> studio visit #01 - Applied Future Studio (<a href="" target="_blank">photos</a>)</li>
+					<li><em>27.–29.09.2013</em> retune. conference 2013 (<a href="" target="_blank">website</a>, <a href="" target="_blank">photos</a>)</li>
+					<li><em>26.–28.10.2012</em> retune. conference 2012 (<a href="" target="_blank">website</a>, <a href="" target="_blank">photos</a>)</li>
+				</ul>
+			</div> <!-- /events -->
+		</div> <!-- /content -->
 	</body>
 
-	<!-- Piwik -->
-	<script type="text/javascript">
-	  var _paq = _paq || [];
-	  _paq.push(["trackPageView"]);
-	  _paq.push(["enableLinkTracking"]);
-
-	  (function() {
-	    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.julianadenauer.de/";
-	    _paq.push(["setTrackerUrl", u+"piwik.php"]);
-	    _paq.push(["setSiteId", "6"]);
-	    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-	    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-	<!-- End Piwik Code -->
-
+	<footer>
+		follow retune on <a href="" target="_blank">twitter</a>, <a href="" target="_blank">facebook</a>, <a href="" target="_blank">instagram</a>, <a href="" target="_blank">flickr</a> and sign up for our <a href="" target="_blank">newsletter</a>. and if you're interested in this kind of stuff, here is our <a href="">imprint</a>.
+	</footer>
 </html>
