@@ -4,7 +4,7 @@ body {
 
   border: 30px solid white;
 
-  font-family: "Apercu Bold", Apercu, Calibri, sans-serif; font-weight:regular; font-style:normal;
+  font-family: "Apercu Regular", Apercu, Calibri, sans-serif; font-weight:regular; font-style:normal;
   font-size: 13px;
   min-height: 100%;
 
@@ -32,7 +32,7 @@ h1 {
   position: absolute;
   top:50%;
   left: 50%;
-  font-family: "Apercu Bold", Apercu, Calibri, sans-serif; font-weight:bold; font-style:normal;
+  font-family: "Apercu Regular", Apercu, Calibri, sans-serif; font-weight:bold; font-style:normal;
 }
 
 h1 img{
