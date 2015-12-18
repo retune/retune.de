@@ -49,10 +49,12 @@ h1 strong {
 h2 {
   font-size: 14px;
   text-decoration: underline;
+  margin-top: 30px;
 }
 
 h3 {
   font-size: 13px;
+
 }
 
 ul{
